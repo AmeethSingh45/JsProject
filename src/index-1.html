@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+  <section class="container-fluid">
+    <section class="row justify-content-center">
+      <section class="col-12 col-sm-6 col-md-3">
+        <form class="form-container">
+          <div class="main-Container">
+            <div class="form-group">
+             
+              <input type="text" class="form-control" id="userName" 
+                placeholder="Enter User Name" required  onChange="inputFieldValidation(event,'userName')" onblur="onLoadCheck()">
+              <p class="error" id="userNameErrorMsg"></p>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password" placeholder="Password" onChange="inputFieldValidation(event,'password')"  required  onblur="onLoadCheck()" />
+              <p class="error" id="passwordErrorMsg"></p>
+            </div></br>
+            <p class="error" id="message1" required></p>
+            <button class="btn btn-primary" id="saveBtn">Submit</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </section>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="loginPage.js"></script>
+</body>
+</html>
